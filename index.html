@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Bare + Bond AI Marketing Intelligence - Project Progress</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Project Progress Dashboard</p>
+      <h1>Bare + Bond AI Marketing Intelligence</h1>
+      <p class="subtitle">Executive view for project status, blockers, next actions, and delivery progress.</p>
+    </div>
+    <div class="status-pill">Updated May 9, 2026</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Current Phase</p>
+        <h2>Step 5 in progress: rebuilt n8n JSON re-uploaded, credential test next</h2>
+        <p>
+          The project foundation, data warehouse design, AI agent prompts, SQL scaffold, and n8n workflow pack are in place.
+          The next delivery focus is credential setup, config review, and the first manual end-to-end run.
+        </p>
+      </div>
+      <div class="progress-panel" aria-label="Overall project completion">
+        <div class="progress-ring" style="--value: 60">
+          <span>60%</span>
+        </div>
+        <div>
+          <strong>Overall Completion</strong>
+          <p>Progress moved forward after the warehouse-standard n8n rebuild and successful workflow re-upload.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-grid" aria-label="Project summary">
+      <article>
+        <span class="label">Done</span>
+        <strong>Workflow foundation rebuilt</strong>
+        <p>n8n JSON files now follow the warehouse architecture and have been re-uploaded.</p>
+      </article>
+      <article>
+        <span class="label">Next</span>
+        <strong>Credential and manual test</strong>
+        <p>Attach credentials, confirm config, and test one workflow from each layer.</p>
+      </article>
+      <article>
+        <span class="label">Blocked By</span>
+        <strong>Real access and owners</strong>
+        <p>API credentials, BigQuery service account, owner names, and real source config.</p>
+      </article>
+      <article>
+        <span class="label">Decision</span>
+        <strong>First source to test</strong>
+        <p>Recommended first path: config sync, owned social or sample data, transform, AI Research, monitor.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Progress By Area</p>
+        <h2>Workstream Snapshot</h2>
+      </div>
+      <div class="workstreams">
+        <div class="workstream"><span>Repo structure cleanup</span><div class="bar"><i style="width:100%"></i></div><b>100%</b></div>
+        <div class="workstream"><span>Foundation docs</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div>
+        <div class="workstream"><span>Agent prompts</span><div class="bar"><i style="width:90%"></i></div><b>90%</b></div>
+        <div class="workstream"><span>Data architecture</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div>
+        <div class="workstream"><span>Business config</span><div class="bar warning"><i style="width:35%"></i></div><b>35%</b></div>
+        <div class="workstream"><span>BigQuery warehouse</span><div class="bar"><i style="width:64%"></i></div><b>64%</b></div>
+        <div class="workstream"><span>n8n workflows</span><div class="bar"><i style="width:86%"></i></div><b>86%</b></div>
+        <div class="workstream"><span>Workflow payload schemas</span><div class="bar"><i style="width:86%"></i></div><b>86%</b></div>
+        <div class="workstream"><span>Weekly reporting</span><div class="bar"><i style="width:58%"></i></div><b>58%</b></div>
+        <div class="workstream"><span>Power BI dashboard</span><div class="bar warning"><i style="width:15%"></i></div><b>15%</b></div>
+        <div class="workstream"><span>QA and governance</span><div class="bar warning"><i style="width:40%"></i></div><b>40%</b></div>
+        <div class="workstream"><span>Launch operations</span><div class="bar warning"><i style="width:20%"></i></div><b>20%</b></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Delivery Steps</h2>
+      </div>
+      <ol class="roadmap">
+        <li class="done"><span>1</span><div><strong>Clean repo structure</strong><p>Done</p></div></li>
+        <li class="active"><span>2</span><div><strong>Finalize foundation docs</strong><p>Current, needs owner approval</p></div></li>
+        <li><span>3</span><div><strong>Fill business config</strong><p>Real competitors, keywords, recipients, owners</p></div></li>
+        <li><span>4</span><div><strong>Set up BigQuery</strong><p>Dataset and DDL deployment</p></div></li>
+        <li class="active"><span>5</span><div><strong>Import and connect n8n workflows</strong><p>JSON re-uploaded, credentials next</p></div></li>
+        <li><span>6</span><div><strong>Load data and test SQL</strong><p>Raw, processed, and mart validation</p></div></li>
+        <li><span>7</span><div><strong>Run AI agent chain</strong><p>Research to Reporter handoff</p></div></li>
+        <li><span>8</span><div><strong>Generate weekly report</strong><p>Thai-friendly report output</p></div></li>
+        <li><span>9</span><div><strong>Build Power BI dashboard</strong><p>Six dashboard pages</p></div></li>
+        <li><span>10</span><div><strong>Run end-to-end test</strong><p>Full pipeline validation</p></div></li>
+        <li><span>11</span><div><strong>Pilot and improve</strong><p>2-4 week operating rhythm</p></div></li>
+      </ol>
+    </section>
+
+    <section class="two-column">
+      <div class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Next Actions</p>
+          <h2>What Needs Attention</h2>
+        </div>
+        <ul class="action-list">
+          <li><strong>Attach credentials</strong><span>BigQuery, OpenAI, source APIs, notification channel.</span></li>
+          <li><strong>Confirm owner names</strong><span>Project Lead, Marketing Lead, Data Owner, Automation Owner, BI Owner.</span></li>
+          <li><strong>Choose first data source</strong><span>Recommended: manual sample, GA4, owned social, or LINE OA.</span></li>
+          <li><strong>Replace TODO SQL</strong><span>Config sync and AI output/handoff/run-log writes.</span></li>
+          <li><strong>Run manual path</strong><span>Config sync -> one collector -> transform -> AI Research -> monitor.</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Risk Board</p>
+          <h2>Open Blockers</h2>
+        </div>
+        <ul class="risk-list">
+          <li><b>Credentials not available</b><span>Blocks live ingestion. Start with sample data.</span></li>
+          <li><b>BigQuery service account not connected</b><span>Blocks warehouse writes from n8n.</span></li>
+          <li><b>Placeholder endpoints remain</b><span>Replace source by source after credentials are confirmed.</span></li>
+          <li><b>Owner names not confirmed</b><span>Blocks handover and alert routing.</span></li>
+          <li><b>Power BI not built</b><span>Spec exists, dashboard implementation still pending.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Architecture</p>
+        <h2>Current Workflow Flow</h2>
+      </div>
+      <div class="flow">
+        <div>Config</div>
+        <span></span>
+        <div>Collection</div>
+        <span></span>
+        <div>BigQuery Raw</div>
+        <span></span>
+        <div>Processed + Marts</div>
+        <span></span>
+        <div>AI Agents</div>
+        <span></span>
+        <div>Report + Power BI</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prepared for project management review. Sensitive credentials and environment values are intentionally excluded.</p>
+  </footer>
+</body>
+</html>
