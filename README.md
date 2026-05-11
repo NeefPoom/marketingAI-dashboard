@@ -23,7 +23,7 @@ This repo includes `.github/workflows/pages.yml`, which deploys this folder to G
 Expected URL format:
 
 ```text
-https://neefpoom.github.io/marketingAI-dashboard/
+https://neefpoom.github.io/marketingAI.dev/
 ```
 
 The exact URL appears in the GitHub Actions deployment output.
