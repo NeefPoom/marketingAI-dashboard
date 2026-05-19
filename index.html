@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,7 @@
   <title>Bare + Bond AI Marketing Intelligence - Project Progress</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <header class="topbar">
     <div>
@@ -14,27 +16,29 @@
       <h1>Bare + Bond AI Marketing Intelligence</h1>
       <p class="subtitle">Executive view for project status, blockers, next actions, and delivery progress.</p>
     </div>
-    <div class="status-pill">Updated May 11, 2026</div>
+    <div class="status-pill">Updated May 19, 2026</div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Current Phase</p>
-        <h2>Step 6 in progress: BigQuery sample write passed, schema discovery next</h2>
+        <h2>Step 6 in progress: YouTube trend signal pipeline ready for validation</h2>
         <p>
-          The project foundation, data warehouse design, AI agent prompts, SQL scaffold, n8n workflow pack, and reusable
-          multi-AI skill bridge are in place. The first n8n to BigQuery sample write passed; the next delivery focus is
-          learning real payload shapes before locking report and dashboard schemas.
+          The project foundation, data warehouse design, SQL scaffold, n8n workflow pack, and reusable multi-AI skill
+          bridge are in place. The Bare + Bond trend workflow now has a YouTube-first collection path with 7-day
+          freshness, video-level dedupe, transcript candidate logic, and AI Analyst / Strategist handoff guidance. The
+          next delivery focus is validating clean rows in BigQuery before expanding Google Trends and TikTok.
         </p>
       </div>
       <div class="progress-panel" aria-label="Overall project completion">
-        <div class="progress-ring" style="--value: 66">
-          <span>66%</span>
+        <div class="progress-ring" style="--value: 70">
+          <span>70%</span>
         </div>
         <div>
           <strong>Overall Completion</strong>
-          <p>Progress moved forward after BigQuery sample validation, schema discovery planning, and skill shelf cleanup.</p>
+          <p>Progress moved forward after BigQuery sample validation, prompt enrichment, and the first YouTube
+            trend-signal workflow pass.</p>
         </div>
       </div>
     </section>
@@ -42,18 +46,21 @@
     <section class="summary-grid" aria-label="Project summary">
       <article>
         <span class="label">Done</span>
-        <strong>Sample warehouse write passed</strong>
-        <p>n8n successfully wrote sample owned-channel rows into BigQuery, proving the warehouse credential path.</p>
+        <strong>YouTube trend path updated</strong>
+        <p>bb-collect-05 now focuses on fresh 7-day YouTube signals, request dedupe, video dedupe, and transcript-ready
+          candidate scoring.</p>
       </article>
       <article>
         <span class="label">Next</span>
-        <strong>Schema discovery</strong>
-        <p>Send realistic sample/provider payloads, profile raw fields, then recommend report-ready schemas.</p>
+        <strong>Validate raw_market_trend</strong>
+        <p>Run the YouTube branch in n8n, confirm clean rows in BigQuery, then promote stable fields into processed
+          trend marts.</p>
       </article>
       <article>
         <span class="label">Blocked By</span>
-        <strong>Live source access</strong>
-        <p>Owned-channel credentials and Apify competitor provider setup are still needed for live ingestion.</p>
+        <strong>Google Trends and TikTok deferred</strong>
+        <p>YouTube is the first validation path. Google Trends and TikTok should stay disabled until provider details
+          are confirmed.</p>
       </article>
       <article>
         <span class="label">Decision</span>
@@ -68,20 +75,48 @@
         <h2>Workstream Snapshot</h2>
       </div>
       <div class="workstreams">
-        <div class="workstream"><span>Repo structure cleanup</span><div class="bar"><i style="width:100%"></i></div><b>100%</b></div>
-        <div class="workstream"><span>Foundation docs</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div>
-        <div class="workstream"><span>Agent prompts</span><div class="bar"><i style="width:90%"></i></div><b>90%</b></div>
-        <div class="workstream"><span>Data architecture</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div>
-        <div class="workstream"><span>Business config</span><div class="bar warning"><i style="width:48%"></i></div><b>48%</b></div>
-        <div class="workstream"><span>BigQuery warehouse</span><div class="bar"><i style="width:72%"></i></div><b>72%</b></div>
-        <div class="workstream"><span>n8n workflows</span><div class="bar"><i style="width:86%"></i></div><b>86%</b></div>
-        <div class="workstream"><span>Workflow payload schemas</span><div class="bar"><i style="width:86%"></i></div><b>86%</b></div>
-        <div class="workstream"><span>Schema discovery</span><div class="bar"><i style="width:38%"></i></div><b>38%</b></div>
-        <div class="workstream"><span>Multi-AI skill bridge</span><div class="bar"><i style="width:88%"></i></div><b>88%</b></div>
-        <div class="workstream"><span>Weekly reporting</span><div class="bar"><i style="width:60%"></i></div><b>60%</b></div>
-        <div class="workstream"><span>Power BI dashboard</span><div class="bar warning"><i style="width:15%"></i></div><b>15%</b></div>
-        <div class="workstream"><span>QA and governance</span><div class="bar warning"><i style="width:40%"></i></div><b>40%</b></div>
-        <div class="workstream"><span>Launch operations</span><div class="bar warning"><i style="width:20%"></i></div><b>20%</b></div>
+        <div class="workstream"><span>Repo structure cleanup</span>
+          <div class="bar"><i style="width:100%"></i></div><b>100%</b>
+        </div>
+        <div class="workstream"><span>Foundation docs</span>
+          <div class="bar"><i style="width:90%"></i></div><b>90%</b>
+        </div>
+        <div class="workstream"><span>Agent prompts</span>
+          <div class="bar"><i style="width:96%"></i></div><b>96%</b>
+        </div>
+        <div class="workstream"><span>Data architecture</span>
+          <div class="bar"><i style="width:85%"></i></div><b>85%</b>
+        </div>
+        <div class="workstream"><span>Business config</span>
+          <div class="bar warning"><i style="width:48%"></i></div><b>48%</b>
+        </div>
+        <div class="workstream"><span>BigQuery warehouse</span>
+          <div class="bar"><i style="width:72%"></i></div><b>72%</b>
+        </div>
+        <div class="workstream"><span>n8n workflows</span>
+          <div class="bar"><i style="width:92%"></i></div><b>92%</b>
+        </div>
+        <div class="workstream"><span>Workflow payload schemas</span>
+          <div class="bar"><i style="width:86%"></i></div><b>86%</b>
+        </div>
+        <div class="workstream"><span>Schema discovery</span>
+          <div class="bar"><i style="width:42%"></i></div><b>42%</b>
+        </div>
+        <div class="workstream"><span>Multi-AI skill bridge</span>
+          <div class="bar"><i style="width:88%"></i></div><b>88%</b>
+        </div>
+        <div class="workstream"><span>Weekly reporting</span>
+          <div class="bar"><i style="width:60%"></i></div><b>60%</b>
+        </div>
+        <div class="workstream"><span>Power BI dashboard</span>
+          <div class="bar warning"><i style="width:15%"></i></div><b>15%</b>
+        </div>
+        <div class="workstream"><span>QA and governance</span>
+          <div class="bar warning"><i style="width:40%"></i></div><b>40%</b>
+        </div>
+        <div class="workstream"><span>Launch operations</span>
+          <div class="bar warning"><i style="width:20%"></i></div><b>20%</b>
+        </div>
       </div>
     </section>
 
@@ -91,17 +126,61 @@
         <h2>Delivery Steps</h2>
       </div>
       <ol class="roadmap">
-        <li class="done"><span>1</span><div><strong>Clean repo structure</strong><p>Done</p></div></li>
-        <li class="done"><span>2</span><div><strong>Finalize foundation docs</strong><p>Owners and operating docs confirmed</p></div></li>
-        <li class="active"><span>3</span><div><strong>Fill business config</strong><p>Competitors, keywords, recipients, and provider details</p></div></li>
-        <li class="done"><span>4</span><div><strong>Set up BigQuery</strong><p>Dataset and sample write validated</p></div></li>
-        <li class="active"><span>5</span><div><strong>Import and connect n8n workflows</strong><p>Sample path works; live sources next</p></div></li>
-        <li class="active"><span>6</span><div><strong>Load data and profile schema</strong><p>Raw payload profiling before final processed schemas</p></div></li>
-        <li><span>7</span><div><strong>Run AI agent chain</strong><p>Research to Reporter handoff</p></div></li>
-        <li><span>8</span><div><strong>Generate weekly report</strong><p>Thai-friendly report output</p></div></li>
-        <li><span>9</span><div><strong>Build Power BI dashboard</strong><p>Six dashboard pages</p></div></li>
-        <li><span>10</span><div><strong>Run end-to-end test</strong><p>Full pipeline validation</p></div></li>
-        <li><span>11</span><div><strong>Pilot and improve</strong><p>2-4 week operating rhythm</p></div></li>
+        <li class="done"><span>1</span>
+          <div><strong>Clean repo structure</strong>
+            <p>Done</p>
+          </div>
+        </li>
+        <li class="done"><span>2</span>
+          <div><strong>Finalize foundation docs</strong>
+            <p>Owners, operating docs, prompt comparison, and trend source handoff added</p>
+          </div>
+        </li>
+        <li class="active"><span>3</span>
+          <div><strong>Fill business config</strong>
+            <p>Competitors, keywords, recipients, and provider details</p>
+          </div>
+        </li>
+        <li class="done"><span>4</span>
+          <div><strong>Set up BigQuery</strong>
+            <p>Dataset and sample write validated</p>
+          </div>
+        </li>
+        <li class="active"><span>5</span>
+          <div><strong>Import and connect n8n workflows</strong>
+            <p>YouTube trend branch updated; Google Trends and TikTok deferred</p>
+          </div>
+        </li>
+        <li class="active"><span>6</span>
+          <div><strong>Load data and profile schema</strong>
+            <p>Validate raw_market_trend rows, dedupe keys, and transcript candidate fields</p>
+          </div>
+        </li>
+        <li><span>7</span>
+          <div><strong>Run AI agent chain</strong>
+            <p>Research to Reporter handoff</p>
+          </div>
+        </li>
+        <li><span>8</span>
+          <div><strong>Generate weekly report</strong>
+            <p>Thai-friendly report output</p>
+          </div>
+        </li>
+        <li><span>9</span>
+          <div><strong>Build Power BI dashboard</strong>
+            <p>Six dashboard pages</p>
+          </div>
+        </li>
+        <li><span>10</span>
+          <div><strong>Run end-to-end test</strong>
+            <p>Full pipeline validation</p>
+          </div>
+        </li>
+        <li><span>11</span>
+          <div><strong>Pilot and improve</strong>
+            <p>2-4 week operating rhythm</p>
+          </div>
+        </li>
       </ol>
     </section>
 
@@ -112,11 +191,16 @@
           <h2>What Needs Attention</h2>
         </div>
         <ul class="action-list">
-          <li><strong>Run schema discovery sample</strong><span>Use sample/provider payloads and profile available raw fields.</span></li>
-          <li><strong>Set up Apify competitor path</strong><span>Add token, actor/task IDs, and collect one output sample.</span></li>
-          <li><strong>Prioritize first owned source</strong><span>Recommended: GA4, LINE OA, or Instagram Business.</span></li>
-          <li><strong>Recommend report metrics</strong><span>Promote only stable fields from raw payloads into processed schemas.</span></li>
-          <li><strong>Keep skill shelf clean</strong><span>One skill per Markdown file, indexed like a library shelf.</span></li>
+          <li><strong>Run YouTube trend branch</strong><span>Confirm the HTTP node sends the API key as a query parameter
+              and returns fresh 7-day videos.</span></li>
+          <li><strong>Validate trend dedupe</strong><span>Check `youtube|videoId` keys in raw_json and processed trend
+              output.</span></li>
+          <li><strong>Review low-relevance videos</strong><span>Adjust keyword seeds and light relevance rules if brand
+              terms pull unrelated Bond results.</span></li>
+          <li><strong>Plan transcript enrichment</strong><span>Fetch transcripts only for strong candidates after light
+              scoring.</span></li>
+          <li><strong>Keep Google Trends/TikTok parked</strong><span>Enable those branches only after provider URLs or
+              actor IDs are confirmed.</span></li>
         </ul>
       </div>
 
@@ -126,11 +210,15 @@
           <h2>Open Blockers</h2>
         </div>
         <ul class="risk-list">
-          <li><b>Live source credentials missing</b><span>Blocks live ingestion. Continue with samples and one source at a time.</span></li>
+          <li><b>YouTube API key must be set in n8n</b><span>The generated URL intentionally excludes the key; the HTTP
+              Request node must add it as `key`.</span></li>
           <li><b>Final schema unknown</b><span>Use raw-payload discovery before changing processed tables.</span></li>
-          <li><b>Apify provider output not sampled</b><span>Need one competitor social and marketplace run before final competitor schema.</span></li>
-          <li><b>Placeholder endpoints remain</b><span>Replace source by source after credentials are confirmed.</span></li>
-          <li><b>Live raw schema differs from repo DDL</b><span>Decide whether to keep generic raw payloads or migrate raw tables later.</span></li>
+          <li><b>Google Trends provider not configured</b><span>The branch returns no rows until a provider URL or Apify
+              actor is selected.</span></li>
+          <li><b>TikTok provider not configured</b><span>Keep the branch disconnected or disabled until the access path is
+              confirmed.</span></li>
+          <li><b>Live raw schema differs from repo DDL</b><span>Decide whether to keep generic raw payloads or migrate
+              raw tables later.</span></li>
           <li><b>Power BI not built</b><span>Spec exists, dashboard implementation still pending.</span></li>
         </ul>
       </div>
@@ -158,7 +246,9 @@
   </main>
 
   <footer>
-    <p>Prepared for project management review. Sensitive credentials and environment values are intentionally excluded.</p>
+    <p>Prepared for project management review. Sensitive credentials and environment values are intentionally excluded.
+    </p>
   </footer>
 </body>
+
 </html>
